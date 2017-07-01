@@ -1,0 +1,21 @@
+int[][] data;
+void setup(){
+
+  String[] stuff = loadStrings("data2.txt"); 
+
+  data = new int[stuff.length][]; 
+
+  for(int i=0; i<stuff.length;i++){
+    data[i] = int(split(stuff[i],',')); 
+    }
+
+  for (int i = 0; i < data.length; i++) {
+    for (int j = 0; j < data[i].length; j++) {
+
+      print(data[i][j]);
+      print("   ");
+    }
+      println();
+  }   
+}
+
